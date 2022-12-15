@@ -14,7 +14,13 @@ function SignIn() {
   const { email, password } = formData;
   const navigate = useNavigate();
 
-  const onChange = () => {};
+  const onChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      // email: e.target.value,
+      [e.target.id]: e.target.value,
+    }));
+  };
 
   return (
     <>
@@ -50,57 +56,22 @@ function SignIn() {
             />
           </div>
           <Link to="/forgot-password" className="forgotPasswordLink">
-            Forgot Password
+            Password
           </Link>
 
           <div className="signInBar">
             <p className="signInText">Sign In</p>
-            <button className="signInButton"><ArrowRightIcon fill="#ffffff" width="34px" height="34px" /></button>
+            <button className="signInButton">
+              <ArrowRightIcon fill="#ffffff" width="34px" height="34px" />
+            </button>
           </div>
         </form>
       </div>
+      <Link to="/signup" className="registerLink">
+        Sign Up
+      </Link>
     </>
   );
 }
 
 export default SignIn;
-
-// rafc: arrow functional component: withour default
-// import React from 'react'
-
-// export const SignIn = () => {
-//   return (
-//     <div>SignIn</div>
-//   )
-// }
-
-// rfc: React function component
-// import React from 'react'
-
-// export default function SignIn() {
-//   return (
-//     <div>SignIn</div>
-
-// }
-
-// rafce: arrow functional component export default
-// import React from 'react'
-
-// const SignIn = () => {
-//   return (
-//     <div>SignIn</div>
-//   )
-// }
-
-// export default SignIn
-
-// rfce: functional component export default
-// import React from 'react'
-
-// function SignIn() {
-//   return (
-//     <div>SignIn</div>
-//   )
-// }
-
-// export default SignIn
