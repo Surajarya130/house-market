@@ -1,0 +1,16 @@
+.testContainer {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+button {
+  outline: auto;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+button:active {
+  background-color: slategrey;
+  color: antiquewhite;
+  outline: none;
+  border-radius: 2px;
+}
