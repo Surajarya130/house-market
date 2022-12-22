@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
+import OAuth from "../components/OAuth";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -22,13 +25,30 @@ function SignIn() {
     }));
   };
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      if (userCredential.user) {
+        navigate("/");
+        toast.success("Logged In Success...");
+      }
+    } catch (error) {
+      toast.error("Bad user login");
+    }
+  };
+
   return (
     <>
       <div className="pageContainer">
-        <header className="pageHeader">
-          <p>Cool</p>
-        </header>
-        <form>
+        <header className="pageHeader">Cool Login here...</header>
+        <form onSubmit={onSubmit}>
           <input
             type="email"
             className="emailInput"
@@ -56,7 +76,7 @@ function SignIn() {
             />
           </div>
           <Link to="/forgot-password" className="forgotPasswordLink">
-            Password
+            Forgot Password
           </Link>
 
           <div className="signInBar">
@@ -66,10 +86,11 @@ function SignIn() {
             </button>
           </div>
         </form>
+        <OAuth />
+        <Link to="/signup" className="registerLink">
+          Sign Up
+        </Link>
       </div>
-      <Link to="/signup" className="registerLink">
-        Sign Up
-      </Link>
     </>
   );
 }

@@ -1,8 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
+import { toast } from "react-toastify";
+import { setDoc, doc, serverTimestamp } from "firebase/firestore";
+import { db } from "../firebase.config";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
+import OAuth from "../components/OAuth";
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
@@ -23,13 +32,38 @@ function SignUp() {
     }));
   };
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const auth = getAuth();
+      const userCredntial = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredntial.user;
+      updateProfile(auth.currentUser, {
+        displayName: name,
+      });
+
+      const formDataCopy = { ...formData };
+      delete formDataCopy.password;
+      formDataCopy.timestamp = serverTimestamp();
+      await setDoc(doc(db, "users", user.uid), formDataCopy);
+
+      navigate("/");
+    } catch (error) {
+      toast.error("Fill up details");
+    }
+  };
+
   return (
     <>
       <div className="pageContainer">
         <header className="pageHeader">
           <p>Cool Sign-up...</p>
         </header>
-        <form>
+        <form onSubmit={onSubmit}>
           <input
             type="text"
             className="nameInput"
@@ -76,10 +110,11 @@ function SignUp() {
             </button>
           </div>
         </form>
+        <OAuth />
+        <Link to="/signin" className="registerLink">
+          Sign in
+        </Link>
       </div>
-      <Link to="/signin" className="registerLink">
-        Sign in
-      </Link>
     </>
   );
 }
