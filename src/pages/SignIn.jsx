@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
+import OAuth from "../components/OAuth";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -14,15 +17,38 @@ function SignIn() {
   const { email, password } = formData;
   const navigate = useNavigate();
 
-  const onChange = () => {};
+  const onChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      // email: e.target.value,
+      [e.target.id]: e.target.value,
+    }));
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      if (userCredential.user) {
+        navigate("/");
+        toast.success("Logged In Success...");
+      }
+    } catch (error) {
+      toast.error("Bad user login");
+    }
+  };
 
   return (
     <>
       <div className="pageContainer">
-        <header className="pageHeader">
-          <p>Cool</p>
-        </header>
-        <form>
+        <header className="pageHeader">Cool Login here...</header>
+        <form onSubmit={onSubmit}>
           <input
             type="email"
             className="emailInput"
@@ -55,52 +81,18 @@ function SignIn() {
 
           <div className="signInBar">
             <p className="signInText">Sign In</p>
-            <button className="signInButton"><ArrowRightIcon fill="#ffffff" width="34px" height="34px" /></button>
+            <button className="signInButton">
+              <ArrowRightIcon fill="#ffffff" width="34px" height="34px" />
+            </button>
           </div>
         </form>
+        <OAuth />
+        <Link to="/signup" className="registerLink">
+          Sign Up
+        </Link>
       </div>
     </>
   );
 }
 
 export default SignIn;
-
-// rafc: arrow functional component: withour default
-// import React from 'react'
-
-// export const SignIn = () => {
-//   return (
-//     <div>SignIn</div>
-//   )
-// }
-
-// rfc: React function component
-// import React from 'react'
-
-// export default function SignIn() {
-//   return (
-//     <div>SignIn</div>
-
-// }
-
-// rafce: arrow functional component export default
-// import React from 'react'
-
-// const SignIn = () => {
-//   return (
-//     <div>SignIn</div>
-//   )
-// }
-
-// export default SignIn
-
-// rfce: functional component export default
-// import React from 'react'
-
-// function SignIn() {
-//   return (
-//     <div>SignIn</div>
-//   )
-// }
-
-// export default SignIn
