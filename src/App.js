@@ -10,13 +10,13 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Category from "./pages/Category";
+import CreateListing from "./pages/CreateListing";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          {/* <Route path="/" element={<TestAxios />} /> */}
           <Route path="/" element={<Explore />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/category/:categoryname" element={<Category />} />
@@ -26,6 +26,7 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/create-listing" element={<CreateListing />} />
         </Routes>
 
         <Navbar />
