@@ -4,6 +4,7 @@ export const useAuthStatus = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [checkingStatus, setCheckingStatus] = useState(true);
   const isMounted = useRef(true);
+  console.log(isMounted);
 
   useEffect(() => {
     if (isMounted) {
@@ -16,6 +17,7 @@ export const useAuthStatus = () => {
       });
     }
     return () => {
+      // useRef is hook which hold current value, here curr val = true
       isMounted.current = false;
     };
   }, [isMounted]);

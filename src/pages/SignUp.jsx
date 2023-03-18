@@ -47,8 +47,12 @@ function SignUp() {
       });
 
       const formDataCopy = { ...formData };
+
+      // Delete password from saving to firebase store
       delete formDataCopy.password;
       formDataCopy.timestamp = serverTimestamp();
+
+      // here setDoc() is firestore method to store the into db
       await setDoc(doc(db, "users", user.uid), formDataCopy);
 
       navigate("/");

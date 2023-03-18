@@ -15,15 +15,18 @@ import {
 } from "firebase/storage";
 import { db } from "../firebase.config";
 import { v4 as uuidv4 } from "uuid"; // to create unique id
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { doc, updateDoc, getDoc, serverTimestamp } from "firebase/firestore";
+import { useParams } from "react-router-dom";
 
-function CreateListing() {
+function EditListing() {
   const [
     geolocationEnabled,
     // eslint-disable-next-line
     setGeolocationEnabled,
   ] = useState(true);
   const [loading, setLoading] = useState(false);
+  const [listing, setListing] = useState(false);
+
   const [formData, setFormData] = useState({
     type: "rent",
     name: "",
@@ -59,7 +62,36 @@ function CreateListing() {
   const auth = getAuth();
   const navigate = useNavigate();
   const isMounted = useRef(true);
+  const params = useParams();
 
+  useEffect(() => {
+    if (listing && listing.userRef !== auth.currentUser.uid) {
+      toast.error("Unauthorised can't edit");
+      navigate("/");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Fetch listing to edit
+  useEffect(() => {
+    setLoading(true);
+    const fetchListing = async () => {
+      const docRef = doc(db, "listings", params.listingId);
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        setListing(docSnap.data());
+        setFormData({ ...docSnap.data(), address: docSnap.data().location });
+        setLoading(false);
+      } else {
+        navigate("/");
+        toast.error("Listing not exist");
+      }
+    };
+    fetchListing();
+  }, [params.listingId, navigate]);
+
+  // UserRef for loggedin
   useEffect(() => {
     if (isMounted) {
       onAuthStateChanged(auth, (user) => {
@@ -190,7 +222,12 @@ function CreateListing() {
     location && (formDataCopy.location = location);
     !formDataCopy.offer && delete formDataCopy.discountedPrice;
 
-    const docRef = await addDoc(collection(db, "listings"), formDataCopy);
+    // Earleir to add new doc but commented because of update feature
+    // const docRef = await addDoc(collection(db, "listings"), formDataCopy);
+
+    const docRef = doc(db, "listings", params.listingId);
+    await updateDoc(docRef, formDataCopy);
+
     setLoading(false);
     toast.success("Listing is created");
     navigate(`/category/${formDataCopy.type}/${docRef.id}`);
@@ -228,7 +265,7 @@ function CreateListing() {
   return (
     <div className="profile">
       <header>
-        <p className="pageHeader">Create listing</p>
+        <p className="pageHeader">Edit the listing</p>
       </header>
       <main>
         <form onSubmit={onSubmit}>
@@ -454,7 +491,7 @@ function CreateListing() {
             required
           />
           <button type="submit" className="primaryButton createListingButton">
-            Create Listing
+            Edit Listing
           </button>
         </form>
       </main>
@@ -462,4 +499,4 @@ function CreateListing() {
   );
 }
 
-export default CreateListing;
+export default EditListing;

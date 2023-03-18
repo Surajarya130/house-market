@@ -1,0 +1,1422 @@
+{
+    "_firestore": {
+        "app": {
+            "_isDeleted": false,
+            "_options": {
+                "apiKey": "AIzaSyCkAHSiH72mKcI8b5rabcVXQmEx32v9Hzk",
+                "authDomain": "house-marketplace-app-3c72e.firebaseapp.com",
+                "projectId": "house-marketplace-app-3c72e",
+                "storageBucket": "house-marketplace-app-3c72e.appspot.com",
+                "messagingSenderId": "825839936011",
+                "appId": "1:825839936011:web:944eb20800f0ce1c3ddd0e"
+            },
+            "_config": {
+                "name": "[DEFAULT]",
+                "automaticDataCollectionEnabled": false
+            },
+            "_name": "[DEFAULT]",
+            "_automaticDataCollectionEnabled": false,
+            "_container": {
+                "name": "[DEFAULT]",
+                "providers": {}
+            }
+        },
+        "databaseId": {
+            "projectId": "house-marketplace-app-3c72e",
+            "database": "(default)"
+        },
+        "settings": {
+            "host": "firestore.googleapis.com",
+            "ssl": true,
+            "ignoreUndefinedProperties": false,
+            "cacheSizeBytes": 41943040,
+            "experimentalForceLongPolling": false,
+            "experimentalAutoDetectLongPolling": false,
+            "useFetchStreams": true
+        }
+    },
+    "_userDataWriter": {
+        "firestore": {
+            "app": {
+                "_isDeleted": false,
+                "_options": {
+                    "apiKey": "AIzaSyCkAHSiH72mKcI8b5rabcVXQmEx32v9Hzk",
+                    "authDomain": "house-marketplace-app-3c72e.firebaseapp.com",
+                    "projectId": "house-marketplace-app-3c72e",
+                    "storageBucket": "house-marketplace-app-3c72e.appspot.com",
+                    "messagingSenderId": "825839936011",
+                    "appId": "1:825839936011:web:944eb20800f0ce1c3ddd0e"
+                },
+                "_config": {
+                    "name": "[DEFAULT]",
+                    "automaticDataCollectionEnabled": false
+                },
+                "_name": "[DEFAULT]",
+                "_automaticDataCollectionEnabled": false,
+                "_container": {
+                    "name": "[DEFAULT]",
+                    "providers": {}
+                }
+            },
+            "databaseId": {
+                "projectId": "house-marketplace-app-3c72e",
+                "database": "(default)"
+            },
+            "settings": {
+                "host": "firestore.googleapis.com",
+                "ssl": true,
+                "ignoreUndefinedProperties": false,
+                "cacheSizeBytes": 41943040,
+                "experimentalForceLongPolling": false,
+                "experimentalAutoDetectLongPolling": false,
+                "useFetchStreams": true
+            }
+        }
+    },
+    "_snapshot": {
+        "query": {
+            "path": {
+                "segments": [
+                    "listings"
+                ],
+                "offset": 0,
+                "len": 1
+            },
+            "collectionGroup": null,
+            "explicitOrderBy": [
+                {
+                    "field": {
+                        "segments": [
+                            "timestamp"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "dir": "desc"
+                }
+            ],
+            "filters": [
+                {
+                    "field": {
+                        "segments": [
+                            "type"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "op": "==",
+                    "value": {
+                        "stringValue": "rent"
+                    }
+                }
+            ],
+            "limit": 10,
+            "limitType": "F",
+            "startAt": null,
+            "endAt": null,
+            "_t": [
+                {
+                    "field": {
+                        "segments": [
+                            "timestamp"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "dir": "desc"
+                },
+                {
+                    "field": {
+                        "segments": [
+                            "__name__"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "dir": "desc"
+                }
+            ],
+            "wt": {
+                "path": {
+                    "segments": [
+                        "listings"
+                    ],
+                    "offset": 0,
+                    "len": 1
+                },
+                "collectionGroup": null,
+                "orderBy": [
+                    {
+                        "field": {
+                            "segments": [
+                                "timestamp"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "dir": "desc"
+                    },
+                    {
+                        "field": {
+                            "segments": [
+                                "__name__"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "dir": "desc"
+                    }
+                ],
+                "filters": [
+                    {
+                        "field": {
+                            "segments": [
+                                "type"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "op": "==",
+                        "value": {
+                            "stringValue": "rent"
+                        }
+                    }
+                ],
+                "limit": 10,
+                "startAt": null,
+                "endAt": null,
+                "ht": "listings|f:type==rent|ob:timestampdesc,__name__desc|l:10"
+            }
+        },
+        "docs": {
+            "keyedMap": {
+                "root": {
+                    "key": {
+                        "path": {
+                            "segments": [
+                                "projects",
+                                "house-marketplace-app-3c72e",
+                                "databases",
+                                "(default)",
+                                "documents",
+                                "listings",
+                                "ZtUxToF4fMoDa47n6mMQ"
+                            ],
+                            "offset": 5,
+                            "len": 2
+                        }
+                    },
+                    "value": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "house-marketplace-app-3c72e",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "listings",
+                                    "ZtUxToF4fMoDa47n6mMQ"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "documentType": 1,
+                        "version": {
+                            "timestamp": {
+                                "seconds": 1678677775,
+                                "nanoseconds": 522173000
+                            }
+                        },
+                        "readTime": {
+                            "timestamp": {
+                                "seconds": 1678699122,
+                                "nanoseconds": 544520000
+                            }
+                        },
+                        "data": {
+                            "value": {
+                                "mapValue": {
+                                    "fields": {
+                                        "name": {
+                                            "stringValue": "4BHK House in Row"
+                                        },
+                                        "geoLocation": {
+                                            "mapValue": {
+                                                "fields": {
+                                                    "lat": {
+                                                        "doubleValue": 51.3744484
+                                                    },
+                                                    "lng": {
+                                                        "doubleValue": 7.5054055
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "timestamp": {
+                                            "timestampValue": "2023-03-13T03:22:55.426Z"
+                                        },
+                                        "location": {
+                                            "stringValue": "Im Alten Holz 58093"
+                                        },
+                                        "offer": {
+                                            "booleanValue": false
+                                        },
+                                        "bathrooms": {
+                                            "stringValue": "5"
+                                        },
+                                        "imgUrls": {
+                                            "arrayValue": {
+                                                "values": [
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29472.JPG-f138d75d-fc0f-40d1-a0ec-f66108efd503?alt=media&token=c37c51e3-651d-4ef2-a924-f3a20b776207"
+                                                    },
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29473.JPG-ed2bb112-e662-4998-979c-77d61b2f5bdb?alt=media&token=fc39edea-418e-48e7-9203-a180db5b7f7e"
+                                                    },
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29474.JPG-113fef85-8aeb-42f9-9188-054859040c10?alt=media&token=7aac0394-7a0d-44e0-8163-d3ab5d26d3b0"
+                                                    },
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29475.JPG-5b7042fd-b3ed-4874-9a0f-60e6c278fb51?alt=media&token=ab558a55-403d-44af-9e40-246e6b9429bf"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "parking": {
+                                            "booleanValue": true
+                                        },
+                                        "longitude": {
+                                            "integerValue": "0"
+                                        },
+                                        "furnished": {
+                                            "booleanValue": true
+                                        },
+                                        "userRef": {
+                                            "stringValue": "1rNPa3K7CVctIyP5G47cEMwK5uJ3"
+                                        },
+                                        "bedrooms": {
+                                            "stringValue": "4"
+                                        },
+                                        "regularPrice": {
+                                            "stringValue": "4500"
+                                        },
+                                        "type": {
+                                            "stringValue": "rent"
+                                        },
+                                        "latitude": {
+                                            "integerValue": "0"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "documentState": 0
+                    },
+                    "color": false,
+                    "left": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "house-marketplace-app-3c72e",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "listings",
+                                    "EpnDzFsCj8eNoyjkNXJ4"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "value": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "house-marketplace-app-3c72e",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "listings",
+                                        "EpnDzFsCj8eNoyjkNXJ4"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "documentType": 1,
+                            "version": {
+                                "timestamp": {
+                                    "seconds": 1678679592,
+                                    "nanoseconds": 718358000
+                                }
+                            },
+                            "readTime": {
+                                "timestamp": {
+                                    "seconds": 1678699122,
+                                    "nanoseconds": 544520000
+                                }
+                            },
+                            "data": {
+                                "value": {
+                                    "mapValue": {
+                                        "fields": {
+                                            "bedrooms": {
+                                                "stringValue": "4"
+                                            },
+                                            "imgUrls": {
+                                                "arrayValue": {
+                                                    "values": [
+                                                        {
+                                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29479.JPG-709c8655-a51c-4b9f-a9cd-ad9d88f46a17?alt=media&token=fa05e10b-9df3-49f5-8b0b-857cb789c974"
+                                                        },
+                                                        {
+                                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29480.JPG-bc2125af-ca03-458e-9181-ec325cd6efc6?alt=media&token=be1843b3-6e7d-4c54-a618-4a672d0d7c6f"
+                                                        },
+                                                        {
+                                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29481.JPG-fd445065-618d-4364-9c12-41db7686e019?alt=media&token=e43a5fc6-dac7-4048-9e99-c671e967ba2d"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "bathrooms": {
+                                                "stringValue": "4"
+                                            },
+                                            "parking": {
+                                                "booleanValue": true
+                                            },
+                                            "location": {
+                                                "stringValue": "450, Im Alten Holz 58094"
+                                            },
+                                            "regularPrice": {
+                                                "stringValue": "600"
+                                            },
+                                            "offer": {
+                                                "booleanValue": false
+                                            },
+                                            "name": {
+                                                "stringValue": "3BHK Apt house in Munich"
+                                            },
+                                            "latitude": {
+                                                "integerValue": "0"
+                                            },
+                                            "userRef": {
+                                                "stringValue": "1rNPa3K7CVctIyP5G47cEMwK5uJ3"
+                                            },
+                                            "longitude": {
+                                                "integerValue": "0"
+                                            },
+                                            "geoLocation": {
+                                                "mapValue": {
+                                                    "fields": {
+                                                        "lng": {
+                                                            "doubleValue": -121.767801
+                                                        },
+                                                        "lat": {
+                                                            "doubleValue": 36.234787
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "timestamp": {
+                                                "timestampValue": "2023-03-13T03:53:12.620Z"
+                                            },
+                                            "type": {
+                                                "stringValue": "rent"
+                                            },
+                                            "furnished": {
+                                                "booleanValue": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "documentState": 0
+                        },
+                        "color": false,
+                        "left": {
+                            "size": 0
+                        },
+                        "right": {
+                            "size": 0
+                        },
+                        "size": 1
+                    },
+                    "right": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "house-marketplace-app-3c72e",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "listings",
+                                    "z48ebrCU8gntYZ3uHyCi"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "value": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "house-marketplace-app-3c72e",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "listings",
+                                        "z48ebrCU8gntYZ3uHyCi"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "documentType": 1,
+                            "version": {
+                                "timestamp": {
+                                    "seconds": 1673923250,
+                                    "nanoseconds": 879501000
+                                }
+                            },
+                            "readTime": {
+                                "timestamp": {
+                                    "seconds": 1678699122,
+                                    "nanoseconds": 544520000
+                                }
+                            },
+                            "data": {
+                                "value": {
+                                    "mapValue": {
+                                        "fields": {
+                                            "timestamp": {
+                                                "timestampValue": "2022-12-08T09:13:24.766Z"
+                                            },
+                                            "location": {
+                                                "stringValue": "9814B Cedar Swamp Street Cincinnati, OH 45211"
+                                            },
+                                            "imgUrls": {
+                                                "arrayValue": {
+                                                    "values": [
+                                                        {
+                                                            "stringValue": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80"
+                                                        },
+                                                        {
+                                                            "stringValue": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "discountedPrice": {
+                                                "integerValue": "2000"
+                                            },
+                                            "furnished": {
+                                                "booleanValue": false
+                                            },
+                                            "geoLocation": {
+                                                "mapValue": {
+                                                    "fields": {
+                                                        "lng": {
+                                                            "doubleValue": -84.56963
+                                                        },
+                                                        "lat": {
+                                                            "doubleValue": 39.14432
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "type": {
+                                                "stringValue": "rent"
+                                            },
+                                            "offer": {
+                                                "booleanValue": true
+                                            },
+                                            "parking": {
+                                                "booleanValue": true
+                                            },
+                                            "bedrooms": {
+                                                "integerValue": "2"
+                                            },
+                                            "regularPrice": {
+                                                "integerValue": "2500"
+                                            },
+                                            "bathrooms": {
+                                                "integerValue": "2"
+                                            },
+                                            "name": {
+                                                "stringValue": "Beautiful Stratford Condo"
+                                            },
+                                            "userRef": {
+                                                "stringValue": "j0L333OdlPeH8GvNqKDh52YhqqZ2"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "documentState": 0
+                        },
+                        "color": false,
+                        "left": {
+                            "size": 0
+                        },
+                        "right": {
+                            "size": 0
+                        },
+                        "size": 1
+                    },
+                    "size": 3
+                }
+            },
+            "sortedSet": {
+                "root": {
+                    "key": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "house-marketplace-app-3c72e",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "listings",
+                                    "ZtUxToF4fMoDa47n6mMQ"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "documentType": 1,
+                        "version": {
+                            "timestamp": {
+                                "seconds": 1678677775,
+                                "nanoseconds": 522173000
+                            }
+                        },
+                        "readTime": {
+                            "timestamp": {
+                                "seconds": 1678699122,
+                                "nanoseconds": 544520000
+                            }
+                        },
+                        "data": {
+                            "value": {
+                                "mapValue": {
+                                    "fields": {
+                                        "name": {
+                                            "stringValue": "4BHK House in Row"
+                                        },
+                                        "geoLocation": {
+                                            "mapValue": {
+                                                "fields": {
+                                                    "lat": {
+                                                        "doubleValue": 51.3744484
+                                                    },
+                                                    "lng": {
+                                                        "doubleValue": 7.5054055
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "timestamp": {
+                                            "timestampValue": "2023-03-13T03:22:55.426Z"
+                                        },
+                                        "location": {
+                                            "stringValue": "Im Alten Holz 58093"
+                                        },
+                                        "offer": {
+                                            "booleanValue": false
+                                        },
+                                        "bathrooms": {
+                                            "stringValue": "5"
+                                        },
+                                        "imgUrls": {
+                                            "arrayValue": {
+                                                "values": [
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29472.JPG-f138d75d-fc0f-40d1-a0ec-f66108efd503?alt=media&token=c37c51e3-651d-4ef2-a924-f3a20b776207"
+                                                    },
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29473.JPG-ed2bb112-e662-4998-979c-77d61b2f5bdb?alt=media&token=fc39edea-418e-48e7-9203-a180db5b7f7e"
+                                                    },
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29474.JPG-113fef85-8aeb-42f9-9188-054859040c10?alt=media&token=7aac0394-7a0d-44e0-8163-d3ab5d26d3b0"
+                                                    },
+                                                    {
+                                                        "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29475.JPG-5b7042fd-b3ed-4874-9a0f-60e6c278fb51?alt=media&token=ab558a55-403d-44af-9e40-246e6b9429bf"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "parking": {
+                                            "booleanValue": true
+                                        },
+                                        "longitude": {
+                                            "integerValue": "0"
+                                        },
+                                        "furnished": {
+                                            "booleanValue": true
+                                        },
+                                        "userRef": {
+                                            "stringValue": "1rNPa3K7CVctIyP5G47cEMwK5uJ3"
+                                        },
+                                        "bedrooms": {
+                                            "stringValue": "4"
+                                        },
+                                        "regularPrice": {
+                                            "stringValue": "4500"
+                                        },
+                                        "type": {
+                                            "stringValue": "rent"
+                                        },
+                                        "latitude": {
+                                            "integerValue": "0"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "documentState": 0
+                    },
+                    "value": null,
+                    "color": false,
+                    "left": {
+                        "key": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "house-marketplace-app-3c72e",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "listings",
+                                        "EpnDzFsCj8eNoyjkNXJ4"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "documentType": 1,
+                            "version": {
+                                "timestamp": {
+                                    "seconds": 1678679592,
+                                    "nanoseconds": 718358000
+                                }
+                            },
+                            "readTime": {
+                                "timestamp": {
+                                    "seconds": 1678699122,
+                                    "nanoseconds": 544520000
+                                }
+                            },
+                            "data": {
+                                "value": {
+                                    "mapValue": {
+                                        "fields": {
+                                            "bedrooms": {
+                                                "stringValue": "4"
+                                            },
+                                            "imgUrls": {
+                                                "arrayValue": {
+                                                    "values": [
+                                                        {
+                                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29479.JPG-709c8655-a51c-4b9f-a9cd-ad9d88f46a17?alt=media&token=fa05e10b-9df3-49f5-8b0b-857cb789c974"
+                                                        },
+                                                        {
+                                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29480.JPG-bc2125af-ca03-458e-9181-ec325cd6efc6?alt=media&token=be1843b3-6e7d-4c54-a618-4a672d0d7c6f"
+                                                        },
+                                                        {
+                                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29481.JPG-fd445065-618d-4364-9c12-41db7686e019?alt=media&token=e43a5fc6-dac7-4048-9e99-c671e967ba2d"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "bathrooms": {
+                                                "stringValue": "4"
+                                            },
+                                            "parking": {
+                                                "booleanValue": true
+                                            },
+                                            "location": {
+                                                "stringValue": "450, Im Alten Holz 58094"
+                                            },
+                                            "regularPrice": {
+                                                "stringValue": "600"
+                                            },
+                                            "offer": {
+                                                "booleanValue": false
+                                            },
+                                            "name": {
+                                                "stringValue": "3BHK Apt house in Munich"
+                                            },
+                                            "latitude": {
+                                                "integerValue": "0"
+                                            },
+                                            "userRef": {
+                                                "stringValue": "1rNPa3K7CVctIyP5G47cEMwK5uJ3"
+                                            },
+                                            "longitude": {
+                                                "integerValue": "0"
+                                            },
+                                            "geoLocation": {
+                                                "mapValue": {
+                                                    "fields": {
+                                                        "lng": {
+                                                            "doubleValue": -121.767801
+                                                        },
+                                                        "lat": {
+                                                            "doubleValue": 36.234787
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "timestamp": {
+                                                "timestampValue": "2023-03-13T03:53:12.620Z"
+                                            },
+                                            "type": {
+                                                "stringValue": "rent"
+                                            },
+                                            "furnished": {
+                                                "booleanValue": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "documentState": 0
+                        },
+                        "value": null,
+                        "color": false,
+                        "left": {
+                            "size": 0
+                        },
+                        "right": {
+                            "size": 0
+                        },
+                        "size": 1
+                    },
+                    "right": {
+                        "key": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "house-marketplace-app-3c72e",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "listings",
+                                        "z48ebrCU8gntYZ3uHyCi"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "documentType": 1,
+                            "version": {
+                                "timestamp": {
+                                    "seconds": 1673923250,
+                                    "nanoseconds": 879501000
+                                }
+                            },
+                            "readTime": {
+                                "timestamp": {
+                                    "seconds": 1678699122,
+                                    "nanoseconds": 544520000
+                                }
+                            },
+                            "data": {
+                                "value": {
+                                    "mapValue": {
+                                        "fields": {
+                                            "timestamp": {
+                                                "timestampValue": "2022-12-08T09:13:24.766Z"
+                                            },
+                                            "location": {
+                                                "stringValue": "9814B Cedar Swamp Street Cincinnati, OH 45211"
+                                            },
+                                            "imgUrls": {
+                                                "arrayValue": {
+                                                    "values": [
+                                                        {
+                                                            "stringValue": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80"
+                                                        },
+                                                        {
+                                                            "stringValue": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "discountedPrice": {
+                                                "integerValue": "2000"
+                                            },
+                                            "furnished": {
+                                                "booleanValue": false
+                                            },
+                                            "geoLocation": {
+                                                "mapValue": {
+                                                    "fields": {
+                                                        "lng": {
+                                                            "doubleValue": -84.56963
+                                                        },
+                                                        "lat": {
+                                                            "doubleValue": 39.14432
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "type": {
+                                                "stringValue": "rent"
+                                            },
+                                            "offer": {
+                                                "booleanValue": true
+                                            },
+                                            "parking": {
+                                                "booleanValue": true
+                                            },
+                                            "bedrooms": {
+                                                "integerValue": "2"
+                                            },
+                                            "regularPrice": {
+                                                "integerValue": "2500"
+                                            },
+                                            "bathrooms": {
+                                                "integerValue": "2"
+                                            },
+                                            "name": {
+                                                "stringValue": "Beautiful Stratford Condo"
+                                            },
+                                            "userRef": {
+                                                "stringValue": "j0L333OdlPeH8GvNqKDh52YhqqZ2"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "documentState": 0
+                        },
+                        "value": null,
+                        "color": false,
+                        "left": {
+                            "size": 0
+                        },
+                        "right": {
+                            "size": 0
+                        },
+                        "size": 1
+                    },
+                    "size": 3
+                }
+            }
+        },
+        "oldDocs": {
+            "keyedMap": {
+                "root": {
+                    "size": 0
+                }
+            },
+            "sortedSet": {
+                "root": {
+                    "size": 0
+                }
+            }
+        },
+        "docChanges": [
+            {
+                "type": 0,
+                "doc": {
+                    "key": {
+                        "path": {
+                            "segments": [
+                                "projects",
+                                "house-marketplace-app-3c72e",
+                                "databases",
+                                "(default)",
+                                "documents",
+                                "listings",
+                                "EpnDzFsCj8eNoyjkNXJ4"
+                            ],
+                            "offset": 5,
+                            "len": 2
+                        }
+                    },
+                    "documentType": 1,
+                    "version": {
+                        "timestamp": {
+                            "seconds": 1678679592,
+                            "nanoseconds": 718358000
+                        }
+                    },
+                    "readTime": {
+                        "timestamp": {
+                            "seconds": 1678699122,
+                            "nanoseconds": 544520000
+                        }
+                    },
+                    "data": {
+                        "value": {
+                            "mapValue": {
+                                "fields": {
+                                    "bedrooms": {
+                                        "stringValue": "4"
+                                    },
+                                    "imgUrls": {
+                                        "arrayValue": {
+                                            "values": [
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29479.JPG-709c8655-a51c-4b9f-a9cd-ad9d88f46a17?alt=media&token=fa05e10b-9df3-49f5-8b0b-857cb789c974"
+                                                },
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29480.JPG-bc2125af-ca03-458e-9181-ec325cd6efc6?alt=media&token=be1843b3-6e7d-4c54-a618-4a672d0d7c6f"
+                                                },
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29481.JPG-fd445065-618d-4364-9c12-41db7686e019?alt=media&token=e43a5fc6-dac7-4048-9e99-c671e967ba2d"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "bathrooms": {
+                                        "stringValue": "4"
+                                    },
+                                    "parking": {
+                                        "booleanValue": true
+                                    },
+                                    "location": {
+                                        "stringValue": "450, Im Alten Holz 58094"
+                                    },
+                                    "regularPrice": {
+                                        "stringValue": "600"
+                                    },
+                                    "offer": {
+                                        "booleanValue": false
+                                    },
+                                    "name": {
+                                        "stringValue": "3BHK Apt house in Munich"
+                                    },
+                                    "latitude": {
+                                        "integerValue": "0"
+                                    },
+                                    "userRef": {
+                                        "stringValue": "1rNPa3K7CVctIyP5G47cEMwK5uJ3"
+                                    },
+                                    "longitude": {
+                                        "integerValue": "0"
+                                    },
+                                    "geoLocation": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "lng": {
+                                                    "doubleValue": -121.767801
+                                                },
+                                                "lat": {
+                                                    "doubleValue": 36.234787
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "timestamp": {
+                                        "timestampValue": "2023-03-13T03:53:12.620Z"
+                                    },
+                                    "type": {
+                                        "stringValue": "rent"
+                                    },
+                                    "furnished": {
+                                        "booleanValue": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "documentState": 0
+                }
+            },
+            {
+                "type": 0,
+                "doc": {
+                    "key": {
+                        "path": {
+                            "segments": [
+                                "projects",
+                                "house-marketplace-app-3c72e",
+                                "databases",
+                                "(default)",
+                                "documents",
+                                "listings",
+                                "ZtUxToF4fMoDa47n6mMQ"
+                            ],
+                            "offset": 5,
+                            "len": 2
+                        }
+                    },
+                    "documentType": 1,
+                    "version": {
+                        "timestamp": {
+                            "seconds": 1678677775,
+                            "nanoseconds": 522173000
+                        }
+                    },
+                    "readTime": {
+                        "timestamp": {
+                            "seconds": 1678699122,
+                            "nanoseconds": 544520000
+                        }
+                    },
+                    "data": {
+                        "value": {
+                            "mapValue": {
+                                "fields": {
+                                    "name": {
+                                        "stringValue": "4BHK House in Row"
+                                    },
+                                    "geoLocation": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "lat": {
+                                                    "doubleValue": 51.3744484
+                                                },
+                                                "lng": {
+                                                    "doubleValue": 7.5054055
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "timestamp": {
+                                        "timestampValue": "2023-03-13T03:22:55.426Z"
+                                    },
+                                    "location": {
+                                        "stringValue": "Im Alten Holz 58093"
+                                    },
+                                    "offer": {
+                                        "booleanValue": false
+                                    },
+                                    "bathrooms": {
+                                        "stringValue": "5"
+                                    },
+                                    "imgUrls": {
+                                        "arrayValue": {
+                                            "values": [
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29472.JPG-f138d75d-fc0f-40d1-a0ec-f66108efd503?alt=media&token=c37c51e3-651d-4ef2-a924-f3a20b776207"
+                                                },
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29473.JPG-ed2bb112-e662-4998-979c-77d61b2f5bdb?alt=media&token=fc39edea-418e-48e7-9203-a180db5b7f7e"
+                                                },
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29474.JPG-113fef85-8aeb-42f9-9188-054859040c10?alt=media&token=7aac0394-7a0d-44e0-8163-d3ab5d26d3b0"
+                                                },
+                                                {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/house-marketplace-app-3c72e.appspot.com/o/images%2F1rNPa3K7CVctIyP5G47cEMwK5uJ3-Cloud%20X4%20Camera29475.JPG-5b7042fd-b3ed-4874-9a0f-60e6c278fb51?alt=media&token=ab558a55-403d-44af-9e40-246e6b9429bf"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "parking": {
+                                        "booleanValue": true
+                                    },
+                                    "longitude": {
+                                        "integerValue": "0"
+                                    },
+                                    "furnished": {
+                                        "booleanValue": true
+                                    },
+                                    "userRef": {
+                                        "stringValue": "1rNPa3K7CVctIyP5G47cEMwK5uJ3"
+                                    },
+                                    "bedrooms": {
+                                        "stringValue": "4"
+                                    },
+                                    "regularPrice": {
+                                        "stringValue": "4500"
+                                    },
+                                    "type": {
+                                        "stringValue": "rent"
+                                    },
+                                    "latitude": {
+                                        "integerValue": "0"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "documentState": 0
+                }
+            },
+            {
+                "type": 0,
+                "doc": {
+                    "key": {
+                        "path": {
+                            "segments": [
+                                "projects",
+                                "house-marketplace-app-3c72e",
+                                "databases",
+                                "(default)",
+                                "documents",
+                                "listings",
+                                "z48ebrCU8gntYZ3uHyCi"
+                            ],
+                            "offset": 5,
+                            "len": 2
+                        }
+                    },
+                    "documentType": 1,
+                    "version": {
+                        "timestamp": {
+                            "seconds": 1673923250,
+                            "nanoseconds": 879501000
+                        }
+                    },
+                    "readTime": {
+                        "timestamp": {
+                            "seconds": 1678699122,
+                            "nanoseconds": 544520000
+                        }
+                    },
+                    "data": {
+                        "value": {
+                            "mapValue": {
+                                "fields": {
+                                    "timestamp": {
+                                        "timestampValue": "2022-12-08T09:13:24.766Z"
+                                    },
+                                    "location": {
+                                        "stringValue": "9814B Cedar Swamp Street Cincinnati, OH 45211"
+                                    },
+                                    "imgUrls": {
+                                        "arrayValue": {
+                                            "values": [
+                                                {
+                                                    "stringValue": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80"
+                                                },
+                                                {
+                                                    "stringValue": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "discountedPrice": {
+                                        "integerValue": "2000"
+                                    },
+                                    "furnished": {
+                                        "booleanValue": false
+                                    },
+                                    "geoLocation": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "lng": {
+                                                    "doubleValue": -84.56963
+                                                },
+                                                "lat": {
+                                                    "doubleValue": 39.14432
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": {
+                                        "stringValue": "rent"
+                                    },
+                                    "offer": {
+                                        "booleanValue": true
+                                    },
+                                    "parking": {
+                                        "booleanValue": true
+                                    },
+                                    "bedrooms": {
+                                        "integerValue": "2"
+                                    },
+                                    "regularPrice": {
+                                        "integerValue": "2500"
+                                    },
+                                    "bathrooms": {
+                                        "integerValue": "2"
+                                    },
+                                    "name": {
+                                        "stringValue": "Beautiful Stratford Condo"
+                                    },
+                                    "userRef": {
+                                        "stringValue": "j0L333OdlPeH8GvNqKDh52YhqqZ2"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "documentState": 0
+                }
+            }
+        ],
+        "mutatedKeys": {
+            "data": {
+                "root": {
+                    "size": 0
+                }
+            }
+        },
+        "fromCache": false,
+        "syncStateChanged": true,
+        "excludesMetadataChanges": false,
+        "hasCachedResults": true
+    },
+    "metadata": {
+        "hasPendingWrites": false,
+        "fromCache": false
+    },
+    "query": {
+        "converter": null,
+        "_query": {
+            "path": {
+                "segments": [
+                    "listings"
+                ],
+                "offset": 0,
+                "len": 1
+            },
+            "collectionGroup": null,
+            "explicitOrderBy": [
+                {
+                    "field": {
+                        "segments": [
+                            "timestamp"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "dir": "desc"
+                }
+            ],
+            "filters": [
+                {
+                    "field": {
+                        "segments": [
+                            "type"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "op": "==",
+                    "value": {
+                        "stringValue": "rent"
+                    }
+                }
+            ],
+            "limit": 10,
+            "limitType": "F",
+            "startAt": null,
+            "endAt": null,
+            "_t": [
+                {
+                    "field": {
+                        "segments": [
+                            "timestamp"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "dir": "desc"
+                },
+                {
+                    "field": {
+                        "segments": [
+                            "__name__"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "dir": "desc"
+                }
+            ],
+            "wt": {
+                "path": {
+                    "segments": [
+                        "listings"
+                    ],
+                    "offset": 0,
+                    "len": 1
+                },
+                "collectionGroup": null,
+                "orderBy": [
+                    {
+                        "field": {
+                            "segments": [
+                                "timestamp"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "dir": "desc"
+                    },
+                    {
+                        "field": {
+                            "segments": [
+                                "__name__"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "dir": "desc"
+                    }
+                ],
+                "filters": [
+                    {
+                        "field": {
+                            "segments": [
+                                "type"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "op": "==",
+                        "value": {
+                            "stringValue": "rent"
+                        }
+                    }
+                ],
+                "limit": 10,
+                "startAt": null,
+                "endAt": null,
+                "ht": "listings|f:type==rent|ob:timestampdesc,__name__desc|l:10"
+            }
+        },
+        "type": "query",
+        "firestore": {
+            "app": {
+                "_isDeleted": false,
+                "_options": {
+                    "apiKey": "AIzaSyCkAHSiH72mKcI8b5rabcVXQmEx32v9Hzk",
+                    "authDomain": "house-marketplace-app-3c72e.firebaseapp.com",
+                    "projectId": "house-marketplace-app-3c72e",
+                    "storageBucket": "house-marketplace-app-3c72e.appspot.com",
+                    "messagingSenderId": "825839936011",
+                    "appId": "1:825839936011:web:944eb20800f0ce1c3ddd0e"
+                },
+                "_config": {
+                    "name": "[DEFAULT]",
+                    "automaticDataCollectionEnabled": false
+                },
+                "_name": "[DEFAULT]",
+                "_automaticDataCollectionEnabled": false,
+                "_container": {
+                    "name": "[DEFAULT]",
+                    "providers": {}
+                }
+            },
+            "databaseId": {
+                "projectId": "house-marketplace-app-3c72e",
+                "database": "(default)"
+            },
+            "settings": {
+                "host": "firestore.googleapis.com",
+                "ssl": true,
+                "ignoreUndefinedProperties": false,
+                "cacheSizeBytes": 41943040,
+                "experimentalForceLongPolling": false,
+                "experimentalAutoDetectLongPolling": false,
+                "useFetchStreams": true
+            }
+        }
+    }
+}
